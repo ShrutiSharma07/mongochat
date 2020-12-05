@@ -1,0 +1,156 @@
+
+body{
+    background-image: url("https://thumbs.dreamstime.com/t/group-chat-icons-d-line-art-animation-minimalistic-men-women-chatting-colorful-talk-bubbles-appear-black-background-106794987.jpg");
+    background-color: rgb(245, 243, 159);
+}
+.jumbotron {
+   background-color: black;
+}
+.display-4 {
+    color: whitesmoke
+
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+#messages{
+    color:whitesmoke;
+    font-size:1.2em;
+}
+* {
+    box-sizing: border-box;
+  }
+  body, html {
+    height: 100%
+  }
+  body {
+    font: 100% 'Oswald', sans-serif;
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .wrapper {
+      height: 100%;
+    }
+    main {
+      min-height: 200px
+    }
+  }
+  .wrapper {
+
+    min-height: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+  header {
+    text-align: center;
+    background: rgb(55,55,55);
+    color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+
+  }
+  
+  h1 { 
+    padding: 10px;
+    font-size: 2.7em;
+    color: rgb(231, 210, 91);
+    text-align: center;
+    margin: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    list-style: none;
+    padding-right: 10px;
+    /*this will push our nav all the way to the right.  Then we don't have to worry about the width*/
+    margin-left: auto
+  }
+  
+  .nav > li:first-child {
+    border-left: 2px solid #fff
+  }
+  a {
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 199, 15);
+    font-size: 1.2em;
+    transition: all 0.5s ease-in-out;
+    padding: 8px
+  }
+  a:hover {
+    background: rgb(228, 238, 32);
+    color: #000
+  }
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    /*this will fill up the remaining space for our content*/
+    flex: 1 1 auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  h2 {
+    width: 100%;
+    background: rgb(75,75,75);
+    color: rgb(205,205,205);
+    font-weight: 100;
+    font-size: 1.5em;
+    padding: 10px 0;
+    text-align: center
+  }
+  main > section {
+    /*this will essentially make it a 3 column layout.  Change it to whatever is needed.  Width and percentages work just as well.*/
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px
+  }
+  main > section > p {
+    padding-bottom: 20px
+  }
+  footer {
+    background: lightblue;
+    text-align: center;
+    padding: 10px;
+    /*you could also get rid of the .wrapper justify-content and use margin-top: auto*/
+  }
+  /*Change these generic media queries to suit your needs, especially with retina displays*/
+  @media screen and (max-width: 568px) {
+    h1 {
+      width: 100%;
+      font-size: 2.0em
+    }
+    .nav {
+      min-width: 100%;
+      margin: auto;
+      padding: 0;
+    }
+    .nav > li {
+      flex: 1
+    }
+    .nav > li > a {
+      font-size: 1.0em
+    }
+    h2 {
+      font-size: 1.2em
+    }
+    main {
+      /*go to a more vertical layout*/
+      flex-flow: column nowrap;
+    }
+    main > section {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+    }
+    main > section > p {
+      width: 100%
+    }
+  }
